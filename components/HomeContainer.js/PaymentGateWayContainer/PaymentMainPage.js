@@ -121,8 +121,8 @@ export default class PaymentMainPage extends React.Component {
     fetch(`https://www.instamojo.com/api/1.1/payment-requests/${trans_id}`, {
       headers: {
         'Content-Type': 'application/json',
-        'X-Api-Key': '18d2c2a55141fca1b31bcfb9ac9e1674',
-        'X-Auth-Token': '021f6c6ac9a65387e6ca1ea5b7f2c637',
+        'X-Api-Key': '~',
+        'X-Auth-Token': '~',
       },
     })
       // fetch(`https://test.instamojo.com/api/1.1/payment-requests/${trans_id}`, {
@@ -240,7 +240,7 @@ export default class PaymentMainPage extends React.Component {
   RazorPayCheckOut = (name, _id) => {
     var options = {
       currency: 'INR',
-      key: 'rzp_live_0Wq21CH2mgbCg6',
+      key: '~',
       //key: 'rzp_test_7PlrxGzntfxP5b',
       amount: this.findAmountByPackId(this.state.sample_id_of_package_selected),
       name: 'Ashish Agrawal',
