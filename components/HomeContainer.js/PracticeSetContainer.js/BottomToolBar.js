@@ -1,7 +1,7 @@
 import React from 'react';
-import { Icon } from 'native-base';
+import {Icon} from 'native-base';
 import BottomNavigation, {
-  FullTab
+  FullTab,
 } from 'react-native-material-bottom-navigation';
 
 export default class BottomToolBar extends React.Component {
@@ -10,27 +10,21 @@ export default class BottomToolBar extends React.Component {
       key: 'move_backward',
       icon: 'rewind',
       label: 'Move Backward',
-      barColor: this.props.toolbar_background_color
+      barColor: this.props.toolbar_background_color,
     },
     {
       key: 'move_forward',
       icon: 'fastforward',
       label: 'Move Forward',
-      barColor: this.props.toolbar_background_color
+      barColor: this.props.toolbar_background_color,
     },
-    {
-      key: 'movies-tv',
-      icon: 'share-alt',
-      label: 'share',
-      barColor: this.props.toolbar_background_color
-    }
   ];
 
-  renderIcon = icon => ({ isActive }) => (
-    <Icon size={24} style={{ color: 'white' }} name={icon} />
+  renderIcon = icon => ({isActive}) => (
+    <Icon size={24} style={{color: 'white'}} name={icon} />
   );
 
-  renderTab = ({ tab, isActive }) => (
+  renderTab = ({tab, isActive}) => (
     <FullTab
       isActive={true}
       key={tab.key}

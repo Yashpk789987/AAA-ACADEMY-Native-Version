@@ -144,7 +144,7 @@ class CustomDrawer___L extends React.Component {
                   <TouchableOpacity
                     style={{
                       paddingLeft: '10%',
-                      paddingTop: '10%',
+                      paddingTop: '7%',
                       flex: 1,
                       flexDirection: 'row',
                     }}
@@ -176,7 +176,7 @@ class CustomDrawer___L extends React.Component {
                   <TouchableOpacity
                     style={{
                       paddingLeft: '10%',
-                      paddingTop: '10%',
+                      paddingTop: '7%',
                       flex: 1,
                       flexDirection: 'row',
                     }}
@@ -200,7 +200,7 @@ class CustomDrawer___L extends React.Component {
                   <TouchableOpacity
                     style={{
                       paddingLeft: '10%',
-                      paddingTop: '10%',
+                      paddingTop: '7%',
                       flex: 1,
                       flexDirection: 'row',
                     }}
@@ -224,7 +224,7 @@ class CustomDrawer___L extends React.Component {
                   <TouchableOpacity
                     style={{
                       paddingLeft: '10%',
-                      paddingTop: '10%',
+                      paddingTop: '7%',
                       flex: 1,
                       flexDirection: 'row',
                     }}
@@ -248,7 +248,7 @@ class CustomDrawer___L extends React.Component {
                   <TouchableOpacity
                     style={{
                       paddingLeft: '10%',
-                      paddingTop: '10%',
+                      paddingTop: '7%',
                       flex: 1,
                       flexDirection: 'row',
                     }}
@@ -266,13 +266,13 @@ class CustomDrawer___L extends React.Component {
                         paddingLeft: '5%',
                         paddingTop: '1%',
                       }}>
-                      Download Pdfs
+                      Online WorkSheets
                     </Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     style={{
                       paddingLeft: '10%',
-                      paddingTop: '10%',
+                      paddingTop: '7%',
                       flex: 1,
                       flexDirection: 'row',
                     }}
@@ -296,7 +296,7 @@ class CustomDrawer___L extends React.Component {
                   <TouchableOpacity
                     style={{
                       paddingLeft: '10%',
-                      paddingTop: '10%',
+                      paddingTop: '7%',
                       flex: 1,
                       flexDirection: 'row',
                     }}

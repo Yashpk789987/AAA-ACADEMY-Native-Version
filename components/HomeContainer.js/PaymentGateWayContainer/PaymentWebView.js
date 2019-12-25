@@ -1,11 +1,10 @@
 import React from 'react';
-import { WebView, ToastAndroid, Alert } from 'react-native';
-import { baseurl, endurl } from '../../../baseurl';
+import {WebView} from 'react-native-webview';
 export default class PaymentWebView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      payment_updated_on_server: false
+      payment_updated_on_server: false,
     };
   }
 
@@ -15,25 +14,25 @@ export default class PaymentWebView extends React.Component {
       let payment_final_id = hitUrl.split('payment_request_id=').pop();
       var response = {
         url: hitUrl,
-        payment_final_id: payment_final_id
+        payment_final_id: payment_final_id,
       };
       this.props.navigation.state.params.setTransactionFinalId(
-        payment_final_id
+        payment_final_id,
       );
       this.props.navigation.goBack();
     }
   };
 
   static navigationOptions = {
-    header: null
+    header: null,
   };
 
   render() {
     let payment_request = this.props.navigation.getParam('payment_request');
     return (
       <WebView
-        ref='webview'
-        source={{ uri: payment_request.longurl }}
+        ref="webview"
+        source={{uri: payment_request.longurl}}
         onNavigationStateChange={this.onNavigationChange}
         javaScriptEnabled={true}
         domStorageEnabled={true}
